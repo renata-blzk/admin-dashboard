@@ -4,21 +4,10 @@ body, html {
     width: 150vh;
 }
 
-.sidebar, 
-.main-area {
-    border: solid 3px blue
-}
-
 .projects,
 .other {
-    border: solid 2px pink;
     padding: 10px;
     font-size: 15px;
-}
-
-.header,
-.main-content {
-    border: solid 2px orange;
 }
 
 .annc,
@@ -27,6 +16,7 @@ body, html {
     padding: 10px;
     display: grid;
     grid-template-rows: 50px 1fr 1fr 1fr;
+    background-color: white;
     
     > div {
         border: solid 2px green;
@@ -44,6 +34,7 @@ body, html {
     > div {
         border: solid 2px yellow;
         height: 150px;
+        background-color: white;
     }
 
     > p {
@@ -58,12 +49,14 @@ body, html {
 
 .main-content {
     display: grid;
-    grid-template-columns: 3fr 1fr;
+    grid-template-columns: 2.5fr 1fr;
+    background-color: beige;
 }
 
 .other {
     display: grid;
     grid-template-rows: 1fr 1fr;
+    gap: 20px;
 }
 
 .header {
@@ -76,25 +69,46 @@ body, html {
     > div {
         border: solid 1px violet;
     }
-}
 
-.sidebar {
-    padding: 10px;
-    display: grid;
-    grid-template-rows: 80px repeat(10, 40px);
-
-    > div {
-        border: solid 1px green;
+    input[type=text] {
+        background-color: beige;
     }
 }
 
-span {
-    color: orange;
+svg {
+    height: 17px;
+    margin-right:12px;    
 }
 
-svg {
-    height: 20px;
-    display: inline-block;
+.sidebar {
+    background-color: rosybrown;
+    padding: 30px 20px 20px 20px;
+    display: grid;
+    grid-template-columns: 40px 5fr;
+    grid-template-rows: 80px repeat(10, 40px);
+    color: white;
+    font-size: 17px;
+
+    div > svg {
+        fill: white;
+        display: block;
+        margin-top: 2px;    
+    }
+
+    div:first-child > svg {
+        height: 30px;
+        margin-top: -4px;
+    }
+
+    .dash {
+        font-size: 22px;
+        font-weight: 600;
+    }
+
+}
+
+span {
+    color: rgb(115, 115, 33);
 }
 
 img {
