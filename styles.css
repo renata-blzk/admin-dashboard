@@ -13,6 +13,7 @@ body, html {
 .other {
     border: solid 2px pink;
     padding: 10px;
+    font-size: 15px;
 }
 
 .header,
@@ -30,10 +31,7 @@ body, html {
     > div {
         border: solid 2px green;
         height: 50px;
-    }
-    
-    > p {
-    
+        font-size: 11px;
     }
 }
 
@@ -87,4 +85,8 @@ body, html {
     > div {
         border: solid 1px green;
     }
+}
+
+span {
+    color: orange;
 }
