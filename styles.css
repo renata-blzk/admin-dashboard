@@ -4,10 +4,19 @@ body, html {
     width: 150vh;
 }
 
+html {
+    background-color: rgb(35, 34, 34);
+}
+
 .projects,
 .other {
     padding: 10px;
     font-size: 15px;
+}
+
+svg {
+    height: 17px;
+    margin-right:12px;    
 }
 
 .annc,
@@ -60,25 +69,59 @@ body, html {
 }
 
 .header {
-    padding: 10px;
+    background-color: azure;
+    padding: 20px 30px 15px 30px;
     display: grid;
-    grid-template-columns: 6fr repeat(3, 1fr);
-    grid-template-rows: 1fr 2fr;
+    grid-template-rows: 1fr 1fr;
     gap: 10px;
 
-    > div {
+    div {
         border: solid 1px violet;
     }
 
     input[type=text] {
         background-color: beige;
     }
+
+    svg {
+        height: 20px;
+    }
+
+    .name {
+        font-weight: 600;
+    }
 }
 
-svg {
-    height: 17px;
-    margin-right:12px;    
+.first-row {
+    display: grid;
+    grid-template-columns: 0.5fr 8fr 1fr 1fr 2fr;
+    align-items: center;
+    
+    div {
+        border: solid 1px pink;
+    }
 }
+
+.second-row {
+    display: grid;
+    grid-template-columns: 1fr 7fr 2fr 2fr 2fr;
+    align-items: center;
+
+    div {
+        border: solid 1px pink;
+    }
+
+    .hi {
+        font-size: 13px;
+        color: black;
+    }
+    
+    .name2 {
+        font-size: 20px;
+        color: black;
+    }
+}
+
 
 .sidebar {
     background-color: rosybrown;
