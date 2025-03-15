@@ -1,3 +1,45 @@
-h1 {
-    color: pink;
+body, html {
+    margin: auto;
+    height: 100%;
+    width: 150vh;
+}
+
+.sidebar, 
+.main-area {
+    border: solid 3px blue;
+}
+
+.projects,
+.other {
+    border: solid 2px pink;
+}
+
+.header,
+.main-content {
+    border: solid 2px orange;
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 5px;
+
+    > div {
+        border: solid 2px yellow;
+    }
+
+    > p {
+        grid-column: 1 / -1;
+    }
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+}
+
+.main-content {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
 }
