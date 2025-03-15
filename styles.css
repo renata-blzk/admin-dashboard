@@ -78,3 +78,13 @@ body, html {
         border: solid 1px violet;
     }
 }
+
+.sidebar {
+    padding: 10px;
+    display: grid;
+    grid-template-rows: 80px repeat(10, 40px);
+
+    > div {
+        border: solid 1px green;
+    }
+}
