@@ -16,39 +16,11 @@ html {
 
 svg {
     height: 17px;
-    margin-right:12px;    
+    margin-right:15px;    
 }
 
-.annc,
-.trending {
-    border: solid 2px red;
-    padding: 10px;
-    display: grid;
-    grid-template-rows: 50px 1fr 1fr 1fr;
-    background-color: white;
-    
-    > div {
-        border: solid 2px green;
-        height: 50px;
-        font-size: 11px;
-    }
-}
-
-.projects {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 50px 1fr 1fr 1fr;
-    gap: 15px;
-
-    > div {
-        border: solid 2px yellow;
-        height: 150px;
-        background-color: white;
-    }
-
-    > p {
-        grid-column: 1 / -1;
-    }
+img {
+    width: 40px;
 }
 
 .wrapper {
@@ -56,76 +28,9 @@ svg {
     grid-template-columns: 1fr 4fr;
 }
 
-.main-content {
-    display: grid;
-    grid-template-columns: 2.5fr 1fr;
-    background-color: beige;
-}
-
-.other {
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    gap: 20px;
-}
-
-.header {
-    background-color: azure;
-    padding: 20px 30px 15px 30px;
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    gap: 10px;
-
-    div {
-        border: solid 1px violet;
-    }
-
-    input[type=text] {
-        background-color: beige;
-    }
-
-    svg {
-        height: 20px;
-    }
-
-    .name {
-        font-weight: 600;
-    }
-}
-
-.first-row {
-    display: grid;
-    grid-template-columns: 0.5fr 8fr 1fr 1fr 2fr;
-    align-items: center;
-    
-    div {
-        border: solid 1px pink;
-    }
-}
-
-.second-row {
-    display: grid;
-    grid-template-columns: 1fr 7fr 2fr 2fr 2fr;
-    align-items: center;
-
-    div {
-        border: solid 1px pink;
-    }
-
-    .hi {
-        font-size: 13px;
-        color: black;
-    }
-    
-    .name2 {
-        font-size: 20px;
-        color: black;
-    }
-}
-
-
 .sidebar {
     background-color: rosybrown;
-    padding: 30px 20px 20px 20px;
+    padding: 25px 20px 20px 20px;
     display: grid;
     grid-template-columns: 40px 5fr;
     grid-template-rows: 80px repeat(10, 40px);
@@ -147,13 +52,159 @@ svg {
         font-size: 22px;
         font-weight: 600;
     }
+}
 
+.header {
+    background-color: azure;
+    padding: 15px 30px 15px 30px;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+
+    input[type=text] {
+        background-color: beige;
+        border: none;
+        width: 30em;
+        height: 1.5em;
+        border-radius: 10px;
+    }
+
+    input[type=text]:focus {
+        outline: none;
+        border: solid 1px rosybrown;
+        box-shadow: 0px 0px 10px lightgrey;
+    }
+
+    svg {
+        height: 20px;
+    }
+
+    .name {
+        font-weight: 600;
+    }
+}
+
+.first-row {
+    display: grid;
+    grid-template-columns: 0.5fr 8fr 1fr 1fr 2fr;
+    align-items: center;
+
+    .bell {
+        margin-left: auto;
+        margin-right: 5px;
+    }
+
+    .name {
+        margin-left: auto;
+        margin-right: 10px;
+    }
+
+    .firstSun {
+        margin: auto;
+    }
+}
+
+.second-row {
+    display: grid;
+    grid-template-columns: 0.7fr 7fr 1fr 1fr 1fr;
+    align-items: center;
+    gap: 20px;
+
+    .hi {
+        font-size: 13px;
+        color: black;
+    }
+    
+    .name2 {
+        font-size: 20px;
+        color: black;
+    }
+
+    .btn {
+        text-align: center;
+        background-color: lightblue;
+        height: 25px;
+        width: 5em;
+        border-radius: 15px;
+        margin-left: auto;
+        font-size: 14px;
+        color: rgb(53, 53, 53);
+        line-height: 25px;
+    }
+
+    .btn:active {
+        outline: none;
+        border: solid 1px rosybrown;
+        box-shadow: 0px 0px 10px lightgrey;
+    }
+}
+
+.main-content {
+    display: grid;
+    grid-template-columns: 2.5fr 1fr;
+    background-color: beige;
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 25px 1fr 1fr 1fr;
+    gap: 17px;
+    color: rgb(96, 95, 95);
+
+    > div {
+        border-left: solid 8px lightskyblue;
+        height: 125px;
+        background-color: white;
+        padding: 20px 10px;
+        border-radius: 5px;
+        font-size: 14px;
+        position: relative;
+        box-shadow: 0px 0px 10px lightgray;
+    }
+
+    .proName {
+        font-size: 16px;
+        font-weight: 600;
+        color: black;
+    }
+
+    > p {
+        grid-column: 1 / -1;
+        font-size: 20px;
+        margin: 10px 0px 0px 0px;
+        color: black;
+    }
+
+    .cubeSvg {
+        position: absolute;
+        bottom: 15px;
+        right: 10px;
+        fill: rgb(74, 73, 73);
+    }
+}
+
+.other {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 5px;
+}
+
+.annc,
+.trending {
+    border: solid 2px red;
+    padding: 5px;
+    display: grid;
+    grid-template-rows: 50px 1fr 1fr 1fr;
+    background-color: white;
+    
+    > div {
+        border: solid 2px green;
+        height: 50px;
+        font-size: 11px;
+    }
 }
 
 span {
     color: rgb(115, 115, 33);
-}
-
-img {
-    width: 40px;
 }
